@@ -5,6 +5,7 @@ const port = process.env.PORT || 9000;
 
 app.get('/', (req, res) => {
   res.send("Hello world, Looking to automate this stuff on heroku..!");
+  res.send("Now commiting to a testing branch, later merged to master... hope an update occurs");
 })
 
 app.listen(port);
