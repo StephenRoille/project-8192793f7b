@@ -10,3 +10,11 @@ before install:
 scripts:
   - npm install
   - npm run pretest
+
+deploy:
+  provider: heroku:git
+  api_key: "$HEROKU_API_KEY"
+  edge: true # opt in to dpl v2
+  app: project-8192793f7b
+  on:
+    branch: master
